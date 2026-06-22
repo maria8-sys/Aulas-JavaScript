@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="img/favicon.jpg">
+    <title>DESAFIO 02</title>
+    <meta name="descripition" content="...">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Maria">
+</head>
+<body>
+    <h1>Realizando operação com números em JS e exibindo diretamente no html</h1>
+    <hr>
+    <h2 id="numero1"></h2>
+    <h2 id="numero2"></h2>
+    <h2 id="operacao"></h2>
+    <h2 id="resultado"></h2>
+
+    <script>
+        window.alert("Seja Bem-Vindo a ferramenta de operação de números")
+        let numero1 = parseFloat(window.prompt("Digite o primeiro número:"));
+        let numero2 = parseFloat(window.prompt("Digite o segundo número:"));
+        let conta = window.prompt("Digite + para soma ou - para subtração");
+
+        let resultado=0;
+
+        if (conta == "+"){
+            resultado = numero1 + numero2;
+            window.alert("Resultado: "+ resultado);
+        }
+        else if (conta == "-"){
+            resultado = numero1 - numero2;
+            window.alert("Resultado: "+ resultado);
+        }
+        else{
+            window.alert("Operação inválida!");
+        }
+
+        document.getElementById("numero1").innerHTML = "Número 1: "+ numero1;
+        document.getElementById("numero2").innerHTML = "Número 2: "+ numero2;
+        document.getElementById("operacao").innerHTML = "Operação: "+ conta;
+        document.getElementById("resultado").innerHTML = "Resultado: "+ resultado;
+    </script>
+   
+</body>
+</html>

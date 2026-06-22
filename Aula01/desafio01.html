@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./favicon.jpg">
+    <title>Desafio 01</title>
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Maria Eduarda">
+</head>
+<body>
+    <script>
+        <h1>REALIZANDO OPERAÇÃO COM NÚMEROS EM JS</h1>
+        const num1 = Number(prompt("Digite o primeiro número:"));
+        const num2 = Number(prompt("Digite o segundo número:"));
+        
+        const operacao = prompt("Qual operação deseja realizar? (soma ou subtração)").toLowerCase();
+
+        if (operacao === "soma") {
+            const resultado = num1 + num2;
+            alert("O resultado da soma é: " + resultado);
+        } else if (operacao === "subtração" || operacao === "subtracao") {
+            const resultado = num1 - num2;
+            alert("O resultado da subtração é: " + resultado);
+        } else {
+            alert("Recarregue a página e tente novamente.");
+        }
+    </script>
+</body>

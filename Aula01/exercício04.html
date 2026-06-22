@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./favicon.jpg">
+    <title>EXERCÍCIO 04 - JAVASCRIPT</title>
+    <meta name="description" content="Conteúdo das aulas de JS">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Maria Eduarda">
+
+</head>
+<body>
+    <h1>Integrando os recursos de interatividade do JS</h1>
+    <hr>
+    <script>
+
+        window.alert("Seja bem-vindo ao site");
+        let nome = window.prompt("QUAL É O SEU NOME? ");
+        window.alert(nome);
+        console.log(nome);
+        let resposta = window.confirm("Você deseja sair da página? ");
+
+        if(resposta==true){
+            setTimeout(() => {
+                window.open("index.html");
+            }, 3000); // 3000 milissegundos = 3 segundos
+
+        }else{
+
+            window.confirm(nome + ", você vai continuar nessa página!");
+        }
+    </script>
+    
+</body>
+</html>
