@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./favicon.jpg">
+    <title>CONTROLE ORGANIZAÇÃO DOS ESTUDOS DE JS</title>
+    <meta name="description" content="Conteúdo das aulas de JS">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Maria Eduarda">
+</head>
+
+<body>
+    <h1><mark>Aula 03</mark> exercício 01</h1>
+    <hr>
+    <input type="button" onclick="triste();" value="FELIZ">
+    <input type="button" onclick="feliz();" value="TRISTE">
+    <img src="cara triste.jpg" id="rosto" style="width: 350px;">
+    <script>
+        function triste(){
+            var tag_img = document.getElementsByName('img')[0]
+            console.log(tag_img)
+            tag_img.src="cara feliz.jpg";
+        }
+        function feliz(){
+            var tag_img = document.getElementsByTagName('img')[0]
+            console.log(tag_img)
+            tag_img.src="cara triste.jpg";
+
+        }
+    </script>
+</body>

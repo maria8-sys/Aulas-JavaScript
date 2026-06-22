@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício da Aula 03 Parte 2 - JavaScript</title>
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites,web, frontend">
+    <meta name="author" content="Maria Eduarda">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trocando a imagem 1º pela imagem 2º</h1>
+    <hr>
+    <div>
+        <img width="1000" id="imagemPrincipal" src="cara feliz.jpg" alt="Imagem do Desafio" width="300">
+    </div>
+    <hr>
+    <button id="btn-trocar">Trocar Imagem</button>
+    <script>
+        const btnTrocar = document.getElementById('btn-trocar');
+        btnTrocar.addEventListener('click', trocarImagem);
+
+        function trocarImagem() {
+            const imagem = document.getElementById('imagemPrincipal');
+            imagem.src = 'cara triste.jpg';
+        }
+    </script>
+</body>
+
+</html>
